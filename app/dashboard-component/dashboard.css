@@ -1,0 +1,78 @@
+.adddata {
+    background-color: rgb(238, 152, 24);
+    width: 300px;
+    border: none;
+    height: 35px;
+    padding-bottom: 40px;
+}
+
+.todoListItem {
+    border-radius: 5px;
+    list-style: none;
+    border-style: solid;
+    background-color: rgb(33, 199, 61);
+}
+
+.deleteTodo {
+    margin-left: 50px;
+    background-color: #ca227f;
+    border-radius: 100%;
+    margin-right: 20px;
+    top: 10px;
+    float: right;
+    position: relative;
+}
+.strikeoff{
+    text-decoration: line-through;
+    color: red;
+}
+
+#form-todo {
+    margin-top: 50px;
+    margin-left: 305px;
+    position: relative;
+    border-radius: 10px;
+    background: linear-gradient(#1D2B64,#F8CDDA);
+    /* background-image: url("assets/image.jpg"); */
+    width: 300px;
+    height: 330px;
+}
+
+#form-todo > input,textarea{
+    margin: 30px;
+    width: 80%;
+}
+
+#form-todo > button{
+    background-color: rgba(250, 114, 85, 0.7); 
+    border: none;
+    color: black;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 80px;
+}
+
+#form-todo > button:hover{
+    box-shadow: 20px 10px 50px grey;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px)
+{
+    .col-sm-3 {
+    width: 25%;
+    height: 200px;
+    }
+}
+
+#desc1{
+    
+}

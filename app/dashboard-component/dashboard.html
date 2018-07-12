@@ -1,0 +1,57 @@
+<div class="container">
+    <div class="row">
+        <div id="form-todo">
+            <!-- <div style="padding-top: 40px;padding-left: 120px"> -->
+                <input type="text"  data-ng-model="mytodoObj.name" placeholder="Title">
+            <!-- </div> -->
+            <!-- <div style="padding-left: 120px"> -->
+                <textarea rows="4"   data-ng-model="mytodoObj.description" placeholder="Description"> </textarea>
+            <!-- </div> -->
+            <!-- <br> -->
+            <!-- <div style="padding-bottom: 20px; padding-left: 120px"> -->
+                <button   ng-click="addData()">AddData</button>
+            <!-- </div> -->
+        </div>
+
+    </div>
+</div>
+<br>
+<!-- <div class="col-sm-8"> -->
+<!-- <div class="container"> -->
+<div class="container">
+    <div class="row">
+        <div class='col-sm-4'></div>
+        <div class='col-sm-3'>
+            <li class="todoListItem" id="task" ng-mouseover="showDesc(todo)" ng-mouseleave="leaveDesc()" ng-repeat="todo in list">
+                <label style="position:relative; bottom:10px; padding-left: 30px">
+                    <input type="checkbox" style="width:20px; margin-top: 15px" ng-model=" todo.checked">
+
+                </label>
+                <label ng-class="{'strikeoff': todo.checked}" style="position:relative; bottom:18px; padding-left: 10px">
+                    {{todo.name}}
+                </label>
+
+
+                <button ng-if="qwer" class="deleteTodo" id='delete{{$index}}' ng-click="delete($index)">x</button>
+
+            </li>
+        </div>
+        <div id="desc1" class="col-sm-3" style="background-color: skyblue; border: solid">
+           <span data-ng-if = "todoDescription != undefined && todoDescription != null && todoDescription != '' "> {{todoDescription}}</span>
+           <span data-ng-if = "todoDescription == undefined || todoDescription == null || todoDescription == '' " >No Description</span> 
+        </div>
+    </div>
+</div>>
+<!-- </div> -->
+<!-- <div class="col-sm-8">
+            <label> TITLE STORED:</label>
+            <ul class="list-group" ng-repeat="item in list" ng-mouseover="showDescription($index)" ng-class="{'strikeoff':mytodoObj.checked}">
+                <li class="list-group-item ">
+                    <input type="checkbox" ng-model="myVar" ng-init="myVar= false">{{todo.name}} </li>
+                <div ng-if="myVar">
+                    <button ng-click="delete($index)">Delete</button>
+                </div>>
+            </ul>
+            <label>DESCRIPTION</label>
+            <p>{{Desc}}</p>
+        </div> -->

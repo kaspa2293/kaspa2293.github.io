@@ -1,0 +1,18 @@
+<header style="z-index: 1; ">
+  <h4 style="text-align: center">TODO APP</h4>
+
+</header>
+<div class="dropdown dropleft" style="float: right; position: relative; z-index: 2; ">
+  <button data-ng-click="showDropdown = !showDropdown" class="btn btn-secondary dropdown-toggle dropleft toggleDropdownBtn"
+    type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    {{initials|uppercase}}
+  </button>
+  <div data-ng-if="showDropdown" class="userDropdown" aria-labelledby="dropdownMenuButton">
+    <!-- <a class="dropdown-item" href="" ng-click="gotoDashboard()">Dashboard</a> -->
+    <a class="dropdown-item" href="" ng-click="gotoProfile()">Profile</a>
+    <a class="dropdown-item" href="" ng-click="logout()">Logout</a>
+  </div>
+</div>
+<main>
+  <ui-view></ui-view>
+</main>
